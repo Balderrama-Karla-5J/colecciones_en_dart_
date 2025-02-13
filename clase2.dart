@@ -193,6 +193,7 @@ void main() {
     precio: 0.0,
     stock: 0,
   );
+  //---------------------LIBRO---------------------
 
   print("-------TABLA DE LIBROS-------");
   // Capturar datos desde la consola
@@ -201,6 +202,8 @@ void main() {
   // Mostrar los datos del libro
   libro.mostrarDatos();
 
+
+//---------------------DISTRIBUIDOR---------------------
 
    Distribuidor distribuidor = Distribuidor(
     idDistribuidor: 0,
@@ -220,6 +223,7 @@ void main() {
   // Mostrar los datos del distribuidor
   distribuidor.mostrarDatos();
 
+//-------------------------CLIENTE-------------------------
 
   Cliente cliente = Cliente(
     nombre: '',
