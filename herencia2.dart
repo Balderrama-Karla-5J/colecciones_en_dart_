@@ -1,6 +1,5 @@
 import 'dart:io';
 
-// Clase Libro
 class Libro {
   String titulo;
   String autor;
@@ -79,7 +78,7 @@ class Sherlock_Holmes extends Libro {
   }
 }
 
-//Clase sucursal
+// clase Sucursal
 class Sucursal {
   String id_sucursal;
   String direccion;
@@ -158,9 +157,9 @@ class Sucursal_Norte extends Sucursal {
   }
 }
 
-
 void main() {
-  // Clase Libro
+
+  print("------------------ Tabla libros  ----------------------");
   // Crear una instancia de Sherlock_Holmes con datos iniciales vacíos
   Sherlock_Holmes sherlock = Sherlock_Holmes(
     titulo: "",
@@ -172,8 +171,6 @@ void main() {
     stock: 0,
   );
 
- print("Karla Alejandra Balderrama Padilla Mat: 22308051281149 gpo 6J");
- print("--------------------Tabla Libro--------------------");
   // Capturar los datos del libro Sherlock Holmes
   print("Capturando datos del libro Sherlock Holmes...");
   sherlock.captura_datos();
@@ -181,8 +178,8 @@ void main() {
   // Mostrar los datos del libro Sherlock Holmes
   sherlock.mostrar_datos();
 
-//Clase Sucursal
-// Crear una instancia de Sucursal_Norte con datos iniciales vacíos
+  print("------------------ Tabla sucursal ----------------------");
+  // Crear una instancia de Sucursal_Norte con datos iniciales vacíos
   Sucursal_Norte sucursalNorte = Sucursal_Norte(
     id_sucursal: "",
     direccion: "",
@@ -192,8 +189,6 @@ void main() {
     empleados: "",
     horario: "",
   );
-
-  print("--------------------Tabla Sucursal--------------------");
 
   // Capturar los datos de la sucursal norte
   print("Capturando datos de la Sucursal Norte...");
